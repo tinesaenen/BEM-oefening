@@ -4,12 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>Oefening op BEM</title>
   </head>
   <body>
-    <h1>
-      Vermits ik telkens de regels van BEM vergeet toe te passen aan het begin
-      van een nieuw project, maakte ik deze kleine website.
+    <h1 class="title">
+      <span class="letter letter--color1">B</span>
+      <span class="letter letter--color2">E</span>
+      <span class="letter letter--color3">M</span>
     </h1>
+
+    <div class="titleContainer">
+      <h2 class="title--small">
+        Omdat ik telkens vergeet om BEM toe te passen tijdens het benoemen van
+        mijn classes en id's, maakte ik deze kleine website waar ik BEM overal
+        gebruik. Het gaat hier niet om het
+        <span class="title--small--highlighted"
+          >MOOI vormgeven van de site </span
+        >maar om
+        <span class="title--small--highlighted">de manier van vorgeven </span>.
+        Om aan te tonen dat ik weldegelijk weet waar BEM over gaat, zijn alle
+        classes en id's volgens de BEM-regels benoemd. <br /><br />
+        Hieronder volgt een uiteenzetting van wat BEM inhoudt. Veel tekst is
+        afkomstig van
+        <span class="title--small--highlighted"
+          >https://seesparkbox.com/foundry/bem_by_example</span
+        >, sommige tekst verzon ik zelf.
+      </h2>
+    </div>
+
+    <h3 class="text">
+      BEM is a popular naming convention for CSS class names that we use widely
+      here at Sparkbox. The fundamental concepts of BEM are simple and
+      straightforward, but there are common errors those new to BEM make that
+      this post seeks to explain through a series of examples. <br />
+      BEM (which stands for
+      <span class="text--highlighted">Block-Element-Modifier</span>) is a naming
+      convention standard for CSS class names. It has fairly wide adoption and
+      is <span class="text--highlighted">immensely useful</span> in writing CSS
+      that is easier to read, understand, and scale.
+    </h3>
+
+    <div class="imageContainer">
+      <div class="image">
+        <img
+          src="https://source.unsplash.com/500x350/?programming"
+          class="image__img"
+        />
+        <h4 class="image__caption">
+          Dit is een afbeelding over BEM die ik van het internet haalde. Via
+          source.unsplash kan je een random image tonen op je website. Je kan
+          bovendien ook de gewenste verhouding meegeven in de link. Heel handig!
+        </h4>
+        <button class="image__button--pink">To BEM</button>
+      </div>
+      <div class="image">
+        <img
+          src="https://source.unsplash.com/500x350/?coding"
+          class="image__img"
+        />
+        <h4 class="image__caption">
+          Dit is een afbeelding over BEM die ik van het internet haalde. Via
+          source.unsplash kan je een random image tonen op je website. Je kan
+          bovendien ook de gewenste verhouding meegeven in de link. Heel handig!
+        </h4>
+        <button class="image__button--darkblue">Or not to BEM</button>
+      </div>
+    </div>
   </body>
 </html>

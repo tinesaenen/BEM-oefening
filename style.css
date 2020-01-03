@@ -1,0 +1,135 @@
+:root {
+  --main-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --white: rgb(255, 255, 255);
+  --red: red;
+  --darkblue: rgb(23, 25, 89);
+  --pink: rgb(236, 167, 255);
+}
+
+body {
+  background-color: rgb(252, 229, 229);
+  margin: 100px 200px 100px 200px;
+}
+
+/* title */
+
+.titleContainer {
+  padding: 40px;
+  background-color: var(--white);
+}
+
+.title {
+  font-family: var(--main-font);
+  font-size: 300px;
+  margin: 0px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: var(--white);
+  margin: 0px 0px 50px 0px;
+}
+
+.letter {
+  margin: 0px;
+}
+.letter--color1 {
+  color: var(--pink);
+}
+
+.letter--color2 {
+  color: var(--white);
+}
+
+.letter--color3 {
+  color: var(--darkblue);
+}
+
+/* small title */
+
+.title--small--highlighted {
+  background-color: var(--pink);
+}
+
+.title--small {
+  font-family: var(--main-font);
+  color: var(--darkblue);
+  font-size: 40px;
+  margin: 0px;
+}
+
+/* text */
+
+.text {
+  font-family: var(--main-font);
+  color: var(--darkblue);
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.text--highlighted {
+  background-color: var(--white);
+}
+
+/* image */
+
+.imageContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.image {
+  width: 100%;
+}
+
+.image__img {
+  width: inherit;
+}
+
+.image__caption {
+  font-family: var(--main-font);
+  color: var(--darkblue);
+  line-height: 1.2;
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
+}
+
+.image__button--pink {
+  font-family: var(--main-font);
+  color: var(--darkblue);
+  font-size: 20px;
+  margin: 20px 0px 0px 0px;
+  padding: 10px 20px 10px 20px;
+  background-color: var(--pink);
+  border: none;
+  outline: none;
+}
+
+.image__button--pink:hover {
+  background-color: var(--white);
+}
+
+.image__button--pink:active {
+  background-color: var(--darkblue);
+  color: var(--white);
+}
+
+.image__button--darkblue {
+  font-family: var(--main-font);
+  color: var(--white);
+  font-size: 20px;
+  margin: 20px 0px 0px 0px;
+  padding: 10px 20px 10px 20px;
+  background-color: var(--darkblue);
+  border: none;
+  outline: none;
+}
+
+.image__button--darkblue:hover {
+  background-color: var(--pink);
+}
+
+.image__button--darkblue:active {
+  background-color: var(--white);
+  color: var(--darkblue);
+}
