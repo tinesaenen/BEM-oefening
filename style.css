@@ -53,7 +53,8 @@ body {
 .title--small {
   font-family: var(--main-font);
   color: var(--darkblue);
-  font-size: 40px;
+  font-size: 30px;
+  line-height: 1.5;
   margin: 0px;
 }
 
@@ -62,8 +63,9 @@ body {
 .text {
   font-family: var(--main-font);
   color: var(--darkblue);
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.5;
+  padding: 40px 0px 40px 0px;
 }
 
 .text--highlighted {
@@ -89,7 +91,7 @@ body {
 .image__caption {
   font-family: var(--main-font);
   color: var(--darkblue);
-  line-height: 1.2;
+  line-height: 1.5;
   margin: 0px;
   padding: 10px 0px 0px 0px;
 }
@@ -97,6 +99,7 @@ body {
 .image__button--pink {
   font-family: var(--main-font);
   color: var(--darkblue);
+  height: 60px;
   font-size: 20px;
   margin: 20px 0px 0px 0px;
   padding: 10px 20px 10px 20px;
@@ -117,6 +120,7 @@ body {
 .image__button--darkblue {
   font-family: var(--main-font);
   color: var(--white);
+  height: 60px;
   font-size: 20px;
   margin: 20px 0px 0px 0px;
   padding: 10px 20px 10px 20px;
@@ -132,4 +136,17 @@ body {
 .image__button--darkblue:active {
   background-color: var(--white);
   color: var(--darkblue);
+}
+
+/* hidden message */
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+h5 {
+  font-size: 40px;
+  margin: 25px 0px 0px 30px;
+  display: none;
 }

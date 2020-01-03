@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="jquery-3.0.0.js"></script>
     <title>Oefening op BEM</title>
   </head>
   <body>
@@ -56,7 +57,10 @@
           source.unsplash kan je een random image tonen op je website. Je kan
           bovendien ook de gewenste verhouding meegeven in de link. Heel handig!
         </h4>
-        <button class="image__button--pink">To BEM</button>
+        <div class="buttonContainer">
+          <button class="image__button--pink">To BEM</button>
+          <h5 class="image__hiddenSmileyHappy">😄</h5>
+        </div>
       </div>
       <div class="image">
         <img
@@ -68,8 +72,28 @@
           source.unsplash kan je een random image tonen op je website. Je kan
           bovendien ook de gewenste verhouding meegeven in de link. Heel handig!
         </h4>
-        <button class="image__button--darkblue">Or not to BEM</button>
+        <div class="buttonContainer">
+          <button class="image__button--darkblue">Or not to BEM</button>
+          <h5 class="image__hiddenSmileySad">😢</h5>
+        </div>
       </div>
     </div>
+
+    <h3 class="text">
+      More complex components will have
+      <span class="text--highlighted">child elements</span>. Each child element
+      that needs styled should include a named class. One of the purposes behind
+      BEM is
+      <span class="text--highlighted"
+        >to keep specificity low and consistent</span
+      >. Don’t omit class names from the child elements in your HTML. That will
+      force you to use a selector with increased specificity to style those bare
+      elements inside the component (see img and figcaption elements below).
+      Leaving those classes off may be more succinct, but you will increase
+      <span class="text--highlighted">risks of cascade issues</span> in the
+      future. One goal of BEM is for most selectors to use just a single class
+      name.
+    </h3>
   </body>
+  <script src="script.js"></script>
 </html>
