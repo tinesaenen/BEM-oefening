@@ -72,6 +72,10 @@ body {
   background-color: var(--white);
 }
 
+.link {
+  color: var(--darkblue);
+}
+
 /* image */
 
 .imageContainer {
